@@ -1,15 +1,33 @@
-.skip-link { position: absolute; left: -9999px; top: 1rem; z-index: 10; padding: .75rem 1rem; background: var(--color-white); }
+.skip-link { position: absolute; left: -9999px; top: 1rem; z-index: 20; padding: .75rem 1rem; background: var(--color-white); color: var(--color-forest); }
 .skip-link:focus { left: 1rem; }
-.site-header { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.25rem var(--page-gutter); background: var(--color-ivory); }
+.site-header { position: relative; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 2rem; min-height: 88px; padding: 1rem var(--page-gutter); background: var(--color-ivory); }
 .brand { display: inline-flex; flex-direction: column; text-decoration: none; color: var(--color-forest); line-height: 1; }
-.brand__name { font: 2rem var(--font-display); }
-.brand__region { margin-top: .35rem; font-size: .62rem; letter-spacing: .22em; }
-.primary-navigation { display: flex; align-items: center; gap: 2rem; }
-.primary-navigation a { text-decoration: none; font-size: .9rem; }
+.brand__name { font: 2.15rem/.95 var(--font-display); letter-spacing: -.055em; }
+.brand__period { color: var(--color-sage); }
+.brand__region { margin-top: .42rem; font-size: .58rem; font-weight: 700; letter-spacing: .25em; }
+.primary-navigation { display: flex; align-items: center; gap: clamp(1.25rem, 3vw, 2.8rem); }
+.primary-navigation a { color: var(--color-charcoal); text-decoration: none; font-size: .82rem; transition: color var(--transition); }
+.primary-navigation a:hover, .primary-navigation a:focus-visible { color: var(--color-sage); }
+.primary-navigation .nav-contact { padding: .78rem 1.05rem; border: 1px solid var(--color-forest); color: var(--color-forest); }
+.primary-navigation .nav-contact span { margin-left: .5rem; }
 .menu-toggle { display: none; }
-.button { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: .8rem 1.35rem; text-decoration: none; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 1.25rem; min-height: 3.35rem; padding: .85rem 1.25rem; text-decoration: none; font-size: .82rem; font-weight: 600; transition: background var(--transition), color var(--transition), transform var(--transition); }
+.button:hover { transform: translateY(-2px); }
 .button--primary { background: var(--color-forest); color: var(--color-ivory); }
+.button--primary:hover { background: var(--color-forest-deep); }
+.button--light { background: var(--color-ivory); color: var(--color-forest); }
+.button--light:hover { background: var(--color-white); }
+.text-link { display: inline-flex; align-items: center; gap: .85rem; color: var(--color-forest); text-decoration: none; font-size: .82rem; font-weight: 600; }
+.text-link span { transition: transform var(--transition); }
+.text-link:hover span { transform: translate(3px, -2px); }
+.text-link--light { color: var(--color-ivory); }
 .section-shell { width: min(100% - 2 * var(--page-gutter), var(--content-width)); margin-inline: auto; }
-.site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 2rem var(--page-gutter); background: var(--color-forest); color: var(--color-ivory); }
+.eyebrow { display: flex; align-items: center; gap: .65rem; color: var(--color-sage); font-size: .64rem; font-weight: 700; letter-spacing: .17em; line-height: 1.5; }
+.eyebrow__line { display: inline-block; width: 1.8rem; height: 1px; background: currentColor; }
+.eyebrow--light { color: var(--color-sand); }
+.site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 2.5rem var(--page-gutter) 1.25rem; background: var(--color-forest-deep); color: var(--color-ivory); }
 .brand--footer { color: var(--color-ivory); }
-.site-footer p, .site-footer small { margin: 0; }
+.brand--footer .brand__period { color: var(--color-sage-light); }
+.site-footer__tagline { margin: 0; color: var(--color-sand); font: 1.25rem var(--font-display); }
+.site-footer__bottom { display: flex; flex-basis: 100%; justify-content: space-between; gap: 1rem; padding-top: 1.2rem; border-top: 1px solid rgb(244 241 233 / 18%); color: var(--color-sand); }
+.site-footer__bottom small, .site-footer__bottom a { margin: 0; color: inherit; font-size: .68rem; text-decoration: none; }
