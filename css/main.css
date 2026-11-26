@@ -6,9 +6,9 @@
 .hero__description { max-width: 27rem; margin-bottom: 2rem; color: rgb(244 241 233 / 78%); font-size: .98rem; line-height: 1.8; }
 .hero__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
 .hero__note { margin: 3.5rem 0 0; color: var(--color-sage-light); font: italic 1.05rem var(--font-display); }
-.hero__visual { position: relative; min-height: 540px; overflow: hidden; background: linear-gradient(155deg, #9B9B7A 0%, #697D68 35%, #405D4D 62%, #263B32 100%); }
+.hero__visual { position: relative; min-height: 540px; overflow: hidden; background-color: var(--color-sage); background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/01/Valle_de_Traslasierra_2010-02-22.jpg"); background-position: center; background-size: cover; }
 .hero__visual::before { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, rgb(20 35 28 / 5%), transparent 48%, rgb(20 35 28 / 45%)), radial-gradient(ellipse at 72% 20%, rgb(229 211 167 / 42%), transparent 34%); }
-.hero__visual::after { position: absolute; right: -8%; bottom: -20%; left: -12%; height: 75%; content: ""; border-radius: 50% 50% 0 0; background: linear-gradient(155deg, #879078, #526B55 55%, #354B3D); transform: rotate(-8deg); box-shadow: 0 -28px 70px rgb(28 44 34 / 18%); }
+.hero__visual::after { position: absolute; right: 0; bottom: 0; left: 0; height: 100%; content: ""; background: linear-gradient(180deg, transparent 48%, rgb(20 35 28 / 22%)); pointer-events: none; }
 .hero__visual-label, .hero__visual-caption { position: absolute; z-index: 2; right: 2rem; left: 2rem; color: var(--color-ivory); }
 .hero__visual-label { top: 2rem; display: flex; justify-content: space-between; font-size: .58rem; letter-spacing: .15em; }
 .hero__visual-caption { bottom: 2.5rem; font: clamp(1.5rem, 2.4vw, 2.5rem)/1.1 var(--font-display); }
@@ -48,7 +48,7 @@
 
 /* Region */
 .region { display: grid; grid-template-columns: 1.05fr .95fr; min-height: 570px; background: var(--color-forest); }
-.region__image { min-height: 480px; background: linear-gradient(145deg, #B6AD91 0%, #829078 35%, #536D58 65%, #2D4938 100%); position: relative; overflow: hidden; }
+.region__image { min-height: 480px; background-color: var(--color-sage); background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e5/ValleTraslasierra.jpg"); background-position: center; background-size: cover; position: relative; overflow: hidden; }
 .region__image::before { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, rgb(20 35 28 / 0%), rgb(20 35 28 / 25%)); }
 .region__content { position: relative; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: clamp(3rem, 7vw, 7rem); color: var(--color-ivory); }
 .region__content h2 { max-width: 10ch; margin: 1.3rem 0; font: clamp(2.8rem, 4.5vw, 4.8rem)/1.03 var(--font-display); font-weight: 400; letter-spacing: -.04em; }
@@ -109,6 +109,7 @@
   .about__index { margin-top: 1rem; }
   .about__content h2 { font-size: clamp(2.8rem, 11vw, 4rem); }
   .site-footer { align-items: flex-start; flex-direction: column; }
+  .site-footer__credits { line-height: 1.8; }
   .site-footer__bottom { flex-direction: column; }
 }
 @media (prefers-reduced-motion: reduce) {
