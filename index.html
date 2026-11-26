@@ -6,6 +6,9 @@
   <meta name="description" content="Encontrá tu lugar en Traslasierra. Propiedades, terrenos y oportunidades en el corazón de las sierras de Córdoba.">
   <meta name="theme-color" content="#263B32">
   <title>Raíces Traslasierra | Tu lugar en las sierras</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/components.css">
@@ -14,46 +17,130 @@
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
+
   <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Raíces Traslasierra, inicio">
-      <span class="brand__name">Raíces</span>
+    <a class="brand" href="#inicio" aria-label="Raíces Traslasierra, inicio">
+      <span class="brand__name">Raíces<span class="brand__period">.</span></span>
       <span class="brand__region">TRASLASIERRA</span>
     </a>
+
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
       <span class="menu-toggle__label">Menú</span>
+      <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
     </button>
+
     <nav class="primary-navigation" id="primary-navigation" aria-label="Navegación principal">
-      <a href="propiedades.html">Propiedades</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
+      <a href="#propiedades">Propiedades</a>
+      <a href="#region">La región</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero__content">
-        <p class="eyebrow">INMOBILIARIA · TRASLASIERRA, CÓRDOBA</p>
-        <h1 id="hero-title">Encontrá tu lugar en las sierras.</h1>
-        <p class="hero__description">Propiedades, terrenos y oportunidades en el corazón de Traslasierra.</p>
-        <a class="button button--primary" href="propiedades.html">Explorar propiedades</a>
+        <p class="eyebrow"><span class="eyebrow__line"></span> INMOBILIARIA · TRASLASIERRA, CÓRDOBA</p>
+        <h1 id="hero-title">Hay lugares que se sienten <em>como hogar.</em></h1>
+        <p class="hero__description">Encontrá tu lugar en las sierras. Propiedades, terrenos y oportunidades en el corazón de Traslasierra.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#propiedades">Explorar propiedades <span aria-hidden="true">↗</span></a>
+          <a class="text-link text-link--light" href="#region">Conocé la región <span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero__note">Un paisaje distinto. Una forma distinta de vivir.</p>
       </div>
-      <div class="hero__image" role="img" aria-label="Paisaje de las sierras de Traslasierra"></div>
+      <div class="hero__visual" role="img" aria-label="Imagen de paisaje serrano de Traslasierra pendiente de reemplazar por fotografía local">
+        <div class="hero__visual-label"><span>34° 54' S</span><span>TRASLASIERRA · CÓRDOBA</span></div>
+        <div class="hero__visual-caption">Tu próximo capítulo<br>puede empezar acá.</div>
+      </div>
+      <div class="hero__bottomline"><span>DESCUBRÍ TRASLASIERRA</span><span>01 — 04</span></div>
     </section>
 
-    <section class="intro section-shell">
-      <p class="eyebrow">UN LUGAR PARA ELEGIR</p>
-      <h2>Una búsqueda que empieza por encontrar tu lugar.</h2>
-      <p>Estamos preparando una selección de propiedades en Traslasierra para ayudarte a dar el próximo paso.</p>
+    <section class="property-entry section-shell" id="propiedades" aria-labelledby="property-entry-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ENCONTRÁ LO QUE BUSCÁS</p>
+          <h2 id="property-entry-title">Un lugar para cada proyecto.</h2>
+        </div>
+        <p class="section-heading__aside">Desde una casa para vivir todo el año hasta un terreno donde empezar de cero.</p>
+      </div>
+
+      <div class="category-grid">
+        <a class="category-card category-card--house" href="#contacto">
+          <span class="category-card__number">01 / VIVIENDA</span>
+          <span class="category-card__bottom"><span><strong>Casas</strong><small>Espacios para vivir y disfrutar</small></span><span class="category-card__arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="category-card category-card--land" href="#contacto">
+          <span class="category-card__number">02 / PROYECTOS</span>
+          <span class="category-card__bottom"><span><strong>Terrenos</strong><small>El comienzo de algo propio</small></span><span class="category-card__arrow" aria-hidden="true">↗</span></span>
+        </a>
+        <a class="category-card category-card--rural" href="#contacto">
+          <span class="category-card__number">03 / CAMPO</span>
+          <span class="category-card__bottom"><span><strong>Campos y chacras</strong><small>Más espacio, otra perspectiva</small></span><span class="category-card__arrow" aria-hidden="true">↗</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured section-shell" aria-labelledby="featured-title">
+      <div class="featured__intro">
+        <p class="eyebrow">UNA SELECCIÓN CON IDENTIDAD LOCAL</p>
+        <h2 id="featured-title">Propiedades para descubrir.</h2>
+        <p>Estamos preparando nuestro catálogo. Muy pronto vas a poder explorar cada propiedad con información clara y fotografías.</p>
+      </div>
+      <div class="featured__empty">
+        <span class="featured__empty-mark" aria-hidden="true">R.</span>
+        <p class="eyebrow">PRÓXIMAMENTE</p>
+        <h3>Nuevas oportunidades en Traslasierra.</h3>
+        <p>¿Buscás algo en particular? Contanos qué tenés en mente y conversemos.</p>
+        <a class="text-link" href="#contacto">Consultar por una propiedad <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="region" id="region" aria-labelledby="region-title">
+      <div class="region__image" role="img" aria-label="Paisaje de las sierras de Córdoba pendiente de fotografía local"></div>
+      <div class="region__content">
+        <p class="eyebrow eyebrow--light">MÁS QUE UNA UBICACIÓN</p>
+        <h2 id="region-title">Traslasierra tiene su propio ritmo.</h2>
+        <p>Sierras, pueblos, caminos y paisajes que hacen de esta región un lugar singular. Encontrar una propiedad también es descubrir el entorno donde querés construir tu historia.</p>
+        <a class="text-link text-link--light" href="#contacto">Hablemos de tu búsqueda <span aria-hidden="true">↗</span></a>
+        <span class="region__signature">CÓRDOBA · ARGENTINA</span>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="nosotros" aria-labelledby="about-title">
+      <div class="about__label">
+        <p class="eyebrow">RAÍCES TRASLASIERRA</p>
+        <span class="about__index">01 — CERCANÍA<br>02 — CLARIDAD<br>03 — CONFIANZA</span>
+      </div>
+      <div class="about__content">
+        <h2 id="about-title">Cada búsqueda tiene una historia detrás.</h2>
+        <p>Comprar, vender o encontrar un lugar para un nuevo proyecto es una decisión importante. Queremos acompañar ese proceso con atención, información clara y conocimiento de la región.</p>
+        <p class="about__closing">Tu lugar en Traslasierra.</p>
+      </div>
+    </section>
+
+    <section class="contact-cta" id="contacto" aria-labelledby="contact-title">
+      <div class="contact-cta__inner">
+        <p class="eyebrow eyebrow--light">EMPECEMOS POR CONVERSAR</p>
+        <h2 id="contact-title">¿Buscás un lugar en Traslasierra?</h2>
+        <p>Contanos qué estás buscando o si querés ofrecer tu propiedad.</p>
+        <a class="button button--light" href="mailto:hola@raicestraslasierra.com">Ponete en contacto <span aria-hidden="true">↗</span></a>
+        <small>El correo es provisional y deberá reemplazarse por el contacto real antes de publicar.</small>
+      </div>
+      <span class="contact-cta__ornament" aria-hidden="true">R.</span>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand brand--footer" href="index.html">
-      <span class="brand__name">Raíces</span>
+    <a class="brand brand--footer" href="#inicio">
+      <span class="brand__name">Raíces<span class="brand__period">.</span></span>
       <span class="brand__region">TRASLASIERRA</span>
     </a>
-    <p>Tu lugar en Traslasierra.</p>
-    <small>© <span data-current-year></span> Raíces Traslasierra.</small>
+    <p class="site-footer__tagline">Tu lugar en Traslasierra.</p>
+    <div class="site-footer__bottom">
+      <small>© <span data-current-year></span> Raíces Traslasierra. Todos los derechos reservados.</small>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
   </footer>
 </body>
 </html>
