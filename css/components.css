@@ -1,0 +1,15 @@
+.skip-link { position: absolute; left: -9999px; top: 1rem; z-index: 10; padding: .75rem 1rem; background: var(--color-white); }
+.skip-link:focus { left: 1rem; }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: 1.25rem var(--page-gutter); background: var(--color-ivory); }
+.brand { display: inline-flex; flex-direction: column; text-decoration: none; color: var(--color-forest); line-height: 1; }
+.brand__name { font: 2rem var(--font-display); }
+.brand__region { margin-top: .35rem; font-size: .62rem; letter-spacing: .22em; }
+.primary-navigation { display: flex; align-items: center; gap: 2rem; }
+.primary-navigation a { text-decoration: none; font-size: .9rem; }
+.menu-toggle { display: none; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 3.25rem; padding: .8rem 1.35rem; text-decoration: none; }
+.button--primary { background: var(--color-forest); color: var(--color-ivory); }
+.section-shell { width: min(100% - 2 * var(--page-gutter), var(--content-width)); margin-inline: auto; }
+.site-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 2rem var(--page-gutter); background: var(--color-forest); color: var(--color-ivory); }
+.brand--footer { color: var(--color-ivory); }
+.site-footer p, .site-footer small { margin: 0; }
