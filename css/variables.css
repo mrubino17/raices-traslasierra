@@ -1,13 +1,18 @@
 :root {
   color-scheme: light;
   --color-forest: #263B32;
+  --color-forest-deep: #1D2D26;
   --color-sage: #697D68;
+  --color-sage-light: #9AA58D;
   --color-sand: #D9D0BE;
+  --color-sand-light: #E8E1D4;
   --color-ivory: #F4F1E9;
   --color-charcoal: #343631;
+  --color-muted: #77796F;
   --color-white: #FFFFFF;
-  --font-display: Georgia, "Times New Roman", serif;
-  --font-body: Arial, Helvetica, sans-serif;
-  --content-width: 1200px;
-  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", Arial, Helvetica, sans-serif;
+  --content-width: 1240px;
+  --page-gutter: clamp(1.25rem, 6vw, 6.5rem);
+  --transition: 220ms ease;
 }
