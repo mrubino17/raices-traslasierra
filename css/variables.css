@@ -1,0 +1,13 @@
+:root {
+  color-scheme: light;
+  --color-forest: #263B32;
+  --color-sage: #697D68;
+  --color-sand: #D9D0BE;
+  --color-ivory: #F4F1E9;
+  --color-charcoal: #343631;
+  --color-white: #FFFFFF;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --content-width: 1200px;
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+}
